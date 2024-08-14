@@ -23,7 +23,7 @@ public class ProductController {
     }
 
     
-    @GetMapping("/api/closingSaleItems")
+    @GetMapping("/main/api/closing-sale")
     public Map<String, Object> getClosingSaleItems() throws IOException {
         Map<String, Object> data = readData();
         List<Map<String, Object>> items = (List<Map<String, Object>>) data.get("ItemsList");
@@ -38,7 +38,7 @@ public class ProductController {
     }
 
     
-    @GetMapping("/api/mainBannerSlider")
+    @GetMapping("/main/api/main-slider")
     public Map<String, Object> getMainBannerSlider() throws IOException {
         Map<String, Object> data = readData();
         List<Map<String, Object>> mainBannerSlider = (List<Map<String, Object>>) data.get("MainBannerSlider");
@@ -47,7 +47,7 @@ public class ProductController {
     }
 
     
-    @GetMapping("/api/weekendSpecialItems")
+    @GetMapping("/main/api/weekend-special")
     public Map<String, Object> getWeekendSpecialItems() throws IOException {
         Map<String, Object> data = readData();
         List<Map<String, Object>> items = (List<Map<String, Object>>) data.get("ItemsList");
@@ -60,7 +60,7 @@ public class ProductController {
     }
 
     
-    @GetMapping("/api/lowestPriceItems")
+    @GetMapping("/main/api/lowest-price")
 public Map<String, Object> getLowestPriceItems() throws IOException {
     Map<String, Object> data = readData();
     List<Map<String, Object>> items = (List<Map<String, Object>>) data.get("ItemsList");
@@ -77,7 +77,7 @@ public Map<String, Object> getLowestPriceItems() throws IOException {
 }
 
     
-    @GetMapping("/api/approvedNewProducts")
+    @GetMapping("/main/api/approved-new-products")
     public Map<String, Object> getApprovedNewProducts() throws IOException {
         Map<String, Object> data = readData();
         List<Map<String, Object>> items = (List<Map<String, Object>>) data.get("ItemsList");
